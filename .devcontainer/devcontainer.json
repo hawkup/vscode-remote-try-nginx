@@ -1,5 +1,6 @@
 {
     "name": "VSCode Remote Try Nginx",
     "dockerFile": "Dockerfile",
-    "forwardPorts": [8080]
+    "forwardPorts": [8080],
+    "postCreateCommand": "cp default.conf /etc/nginx/conf.d/ && cp index.html /usr/share/nginx/html/ && nginx -s reload"
 }
