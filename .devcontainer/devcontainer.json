@@ -1,0 +1,10 @@
+{
+    "name": "VSCode Remote Try Nginx",
+    "dockerFile": "Dockerfile",
+
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+
+    "forwardPorts": [8080]
+}
